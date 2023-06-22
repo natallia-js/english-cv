@@ -1,0 +1,144 @@
+$header-color: #5c87b9;
+$accent-color: #62a0e7;
+$divider-border-color: #c8c8c8e8;
+$left-panel-color: #f1f1f1;
+
+@mixin common-header-styles {
+    color: $header-color;
+}
+
+@mixin lower-border {
+    border-bottom: 1px solid $divider-border-color;
+    padding-bottom: 0.5rem;
+}
+
+@mixin just-text {
+    font-size: 0.8rem;
+}
+
+html {
+    background-color: $header-color;
+    padding: 1rem;
+    min-width: 20rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+header {
+    @include lower-border();
+}
+
+h1 {
+    @include common-header-styles();
+    margin: 0 0 1rem 0;
+}
+
+.posts {
+    @include just-text();
+}
+
+main {
+    padding: 1.3rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-basis: auto;
+}
+
+.left-block {
+    box-sizing: border-box;
+    flex-basis: 100px;
+    flex-grow: 1;
+    background-color: $left-panel-color;
+    padding: 1rem;
+}
+
+.right-block {
+    box-sizing: border-box;
+    flex-basis: 300px;
+    flex-grow: 3;
+    padding: 0 0 0 1.3rem;
+}
+
+.photo-block {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.photo {
+    width: 100%;
+}
+
+h3 {
+    @include common-header-styles();
+    @include lower-border();
+    margin: 0 0 1rem 0;
+}
+
+.single-point-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    @include just-text();
+    margin-right: 1rem;
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+.additional-info-item {
+    @include just-text();
+    color: $header-color;
+    font-weight: 600;
+    flex-basis: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.subheader {
+    font-weight: 600;
+    @include just-text();
+}
+
+.accent-text {
+    @include just-text();
+    color: $accent-color;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+    }
+    .right-block {
+        padding: 1.3rem 0 0 0;
+    }
+}
+
+@mixin grade-circle {
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.1rem;
+}
+
+.filled-grade-circle {
+    @include grade-circle();
+    background-color: $header-color;
+}
+
+.nonfilled-grade-circle {
+    @include grade-circle();
+    background-color: $divider-border-color;
+}

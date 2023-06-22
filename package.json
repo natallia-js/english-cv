@@ -1,0 +1,12 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "my resume",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Natallia Fedartsova",
+  "license": "MIT"
+}
