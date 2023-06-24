@@ -126,19 +126,35 @@ h3 {
     }
 }
 
-@mixin grade-circle {
+@mixin grade-circle-large {
     border-radius: 50%;
     width: 0.8rem;
     height: 0.8rem;
     margin-right: 0.1rem;
 }
 
+@mixin grade-circle-small {
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.1rem;
+}
+
 .filled-grade-circle {
-    @include grade-circle();
+    @include grade-circle-large();
     background-color: $header-color;
 }
 
 .nonfilled-grade-circle {
-    @include grade-circle();
+    @include grade-circle-large();
     background-color: $divider-border-color;
+}
+
+@media screen and (max-width: 400px) {
+    .filled-grade-circle {
+        @include grade-circle-small();
+    }
+    .nonfilled-grade-circle {
+        @include grade-circle-small();
+    }
 }
