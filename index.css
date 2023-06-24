@@ -139,7 +139,7 @@ h3 {
   color: #62a0e7;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
