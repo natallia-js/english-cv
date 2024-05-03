@@ -8,5 +8,7 @@
   },
   "keywords": [],
   "author": "Natallia Fedartsova",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "main": "main.js"
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV - Natallia Fedartsova</title>
         <link rel="stylesheet" href="index.css">
+        <script type="module" src="./main.js"></script>
     </head>
     <body>
         <header>
@@ -27,172 +28,46 @@
                     </picture>
                 </div>
                 <h3>Personal details</h3>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Name</div>
-                        Natallia Fedartsova
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Email addresses</div>
+                <personal-info-block blockTitle="Name">
+                    <span slot="info">Natallia Fedartsova</span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Email addresses">
+                    <span slot="info">
                         fedartsova@gmail.com
                         <br/>
                         fedartsova@tut.by
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Phone number</div>
-                        +375295773719
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Address</div>
+                    </span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Phone number">
+                    <span slot="info">+375295773719</span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Address">
+                    <span slot="info">
                         Belarus, Minsk,
                         <br/>
                         Voronyanskogo str.
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Date of birth</div>
-                        December 28, 1983
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Gender</div>
-                        Female
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Nalionality</div>
-                        Belarus
-                    </div>
-                </div>
-                <div class="single-point-block">
-                    <div class="info-item">
-                        <div class="subheader">Civil status</div>
-                        Married
-                    </div>
-                </div>
+                    </span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Date of birth">
+                    <span slot="info">December 28, 1983</span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Gender">
+                    <span slot="info">Female</span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Nationality">
+                    <span slot="info">Belarus</span>
+                </personal-info-block>
+                <personal-info-block blockTitle="Civil status">
+                    <span slot="info">Married</span>
+                </personal-info-block>
             </div>
-
             <div class="right-block">
-                <h3>Education</h3>
-                <div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Belarussian State University of Computer Science and Radioengineering</div>
-                             Qualifications: System programmer, Mathematician, Master of engineering
-                        </div>
-                        <div class="additional-info-item">Sep 2001 - Jun 2007</div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Institute of Mathematics, National Academy of Sciences</div>
-                             PhD (physical and mathematical sciences)
-                        </div>
-                        <div class="additional-info-item">Sep 2007 - Jan 2014</div>
-                    </div>
-                </div>
-
-                <h3>Trainings</h3>
-                <div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">The Rolling Scopes School</div>
-                            Course: JavaScript
-                        </div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">The Rolling Scopes School</div>
-                            Course: React
-                        </div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Institute of Control and Social Technologies, Belarussian State University</div>
-                            Course: Dynamic web-pages developing using JavaScript
-                        </div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Belarussian State Institute for Continuing Education and Retraining of Personnel in Standardization, Metrology and Quality Management</div>
-                            Course: Certification of products and services (training of railway expert auditors)
-                        </div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Institute of Informatization and Management Technologies, Belarussian State University</div>
-                            Course: Development of security tasks based on security profiles
-                        </div>
-                    </div>
-                </div>
-            
-                <h3>Employment</h3>
-                <div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Software Engineer</div>
-                            <div class="accent-text">Belarussian Railway, Minsk</div>
-                        </div>
-                        <div class="additional-info-item">Jan 2005 - Oct 2009</div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Chief Project Engineer</div>
-                            <div class="accent-text">Belarussian Railway, Minsk</div>
-                        </div>
-                        <div class="additional-info-item">Oct 2009 - Dec 2016</div>
-                    </div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">Head of Software Development Department</div>
-                            <div class="accent-text">Belarussian Railway, Minsk</div>
-                        </div>
-                        <div class="additional-info-item">Dec 2016 - Present</div>
-                    </div>
-                </div>
-
-                <h3>Skills</h3>
-                <div class="single-point-block subheader">
-                    C#, HTML, CSS, JavaScript, Node.js, React.js, Vue.js, MS SQL Server, MongoDB, PostgreSQL, Firebird, git
-                </div>
-
-                <h3>Languages</h3>
-                <div>
-                    <div class="single-point-block">
-                        <div class="info-item">
-                            <div class="subheader">English</div>
-                            <ul>
-                                <li>3-year course of abstracting and translation of scientific and technical literature, Belarussian State University of Computer Science and Radioengineering, Minsk</li>
-                                <li>2 weeks at ESE school, Malta</li>
-                            </ul>
-                        </div>
-                        <div class="additional-info-item">
-                            <div class="filled-grade-circle"></div>
-                            <div class="filled-grade-circle"></div>
-                            <div class="filled-grade-circle"></div>
-                            <div class="filled-grade-circle"></div>
-                            <div class="filled-grade-circle"></div>
-                            <div class="filled-grade-circle"></div>
-                            <div class="nonfilled-grade-circle"></div>
-                            <div class="nonfilled-grade-circle"></div>
-                            <div class="nonfilled-grade-circle"></div>
-                            <div class="nonfilled-grade-circle"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>Hobbies</h3>
-                <div class="single-point-block subheader">
-                    Plant growing, Giving new life to old things, Skiing, Skating, Walking, Riding a bicycle
-                </div>
+                <skills-block blockTitle="Skills"></skills-block>                
+                <education-block blockTitle="Education"></education-block>
+                <trainings-block blockTitle="Trainings"></trainings-block>
+                <languages-block blockTitle="Languages"></languages-block>
+                <employment-block blockTitle="Employment"></employment-block>
+                <hobbies-block blockTitle="Hobbies"></hobbies-block>
             </div>
         </main>
     </body>
