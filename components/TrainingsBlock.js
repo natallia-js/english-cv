@@ -23,6 +23,12 @@ export default class TrainingsBlock extends InfoBlock {
                 </div>
                 <div class="single-point-block">
                     <div class="info-item">
+                        <div class="subheader">The Rolling Scopes School</div>
+                        Course: Node.js
+                    </div>
+                </div>
+                <div class="single-point-block">
+                    <div class="info-item">
                         <div class="subheader">Institute of Control and Social Technologies, Belarussian State University</div>
                         Course: Dynamic web-pages developing using JavaScript
                     </div>
