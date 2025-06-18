@@ -9,7 +9,7 @@ export default class SkillsBlock extends InfoBlock {
         super.render();
         this.innerHTML += `
             <div class="single-point-block subheader">
-                C#, HTML, CSS, JavaScript, Node.js, React.js, Vue.js, MS SQL Server, MongoDB, PostgreSQL, Firebird, git
+                C#, HTML, CSS, JavaScript, Node.js, Nest.js, React.js, Next.js, Vue.js, MS SQL Server, MongoDB, PostgreSQL, Firebird, git
             </div>
         `;
     }    
