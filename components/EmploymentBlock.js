@@ -5,6 +5,10 @@ export default class EmploymentBlock extends InfoBlock {
         super();
     }
 
+    // <div class="additional-info-item">Jan 2005 - Oct 2009</div>
+    // <div class="additional-info-item">Oct 2009 - Dec 2016</div>
+    // <div class="additional-info-item">Dec 2016 - Present</div>
+
     render() {
         super.render();
         this.innerHTML += `
@@ -20,7 +24,6 @@ export default class EmploymentBlock extends InfoBlock {
                             an integral part of our completed train schedule maintenance system
                         </ul>
                     </div>
-                    <!--<div class="additional-info-item">Jan 2005 - Oct 2009</div>-->
                     <div class="additional-info-item">4 years</div>
                 </div>
                 <div class="single-point-block">
@@ -35,7 +38,6 @@ export default class EmploymentBlock extends InfoBlock {
                             acoustic sounding system</li>
                         </ul>
                     </div>
-                    <!--<div class="additional-info-item">Oct 2009 - Dec 2016</div>-->
                     <div class="additional-info-item">2 years</div>
                 </div>
                 <div class="single-point-block">
@@ -49,7 +51,6 @@ export default class EmploymentBlock extends InfoBlock {
                             <li>lead and participate in development of the new core of the completed train schedule maintenance system</li>
                         </ul>
                     </div>
-                    <!--<div class="additional-info-item">Dec 2016 - Present</div>-->
                     <div class="additional-info-item">Till Present</div>
                 </div>
             </div>
