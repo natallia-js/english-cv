@@ -9,65 +9,28 @@
         <script type="module" src="./main.js"></script>
     </head>
     <body>
-        <header>
-            <h1>Natallia Fedartsova</h1>
-            <div class="subheader">Software developer</div>
-            <br/>
-            <div class="posts">
-                I'm a highly motivated and goal-oriented individual who is willing
-                to share my thoughts and ideas with like-minded people and get additional
-                knowledge and experience in return.
-            </div>
-        </header>
         <main>
             <div class="left-block">
-                <div class="photo-block">
-                    <picture>
-                        <source srcset="./photo.webp" />
-                        <img src="./photo.webp" alt="Here must be my photo :)" class="photo" />
-                    </picture>
+                <div class="photo-name-block">
+                    <div class="photo-block">
+                        <img src="./assets/images/photo.webp" alt="Here must be my photo :)" class="photo" />
+                    </div>
+                    <main-title-block></main-title-block>
                 </div>
-                <h3>Personal details</h3>
-                <personal-info-block blockTitle="Name">
-                    <span slot="info">Natallia Fedartsova</span>
-                </personal-info-block>
-                <personal-info-block blockTitle="Email addresses">
-                    <span slot="info">
-                        fedartsova@gmail.com
-                        <br/>
-                        fedartsova@tut.by
-                    </span>
-                </personal-info-block>
-                <personal-info-block blockTitle="Phone number">
-                    <span slot="info">+375295773719</span>
-                </personal-info-block>
-                <personal-info-block blockTitle="Address">
-                    <span slot="info">
-                        Belarus, Minsk,
-                        <br/>
-                        Voronyanskogo str.
-                    </span>
-                </personal-info-block>
-                <!--<personal-info-block blockTitle="Date of birth">
-                    <span slot="info">December 28, 1983</span>
-                </personal-info-block>-->
-                <personal-info-block blockTitle="Gender">
-                    <span slot="info">Female</span>
-                </personal-info-block>
-                <personal-info-block blockTitle="Nationality">
-                    <span slot="info">Belarus</span>
-                </personal-info-block>
-                <personal-info-block blockTitle="Civil status">
-                    <span slot="info">Married</span>
-                </personal-info-block>
+                <div class="personal-details-block">
+                    <h3>Contact</h3>
+                    <contacts-block></contacts-block>
+                    <hr class="divider" />
+                    <h3>Professional profile</h3>
+                    <professional-profile-block></professional-profile-block>
+                    <hr class="divider" />
+                    <h3>Skills</h3>
+                    <skills-block></skills-block>
+                </div>
             </div>
             <div class="right-block">
-                <skills-block blockTitle="Skills"></skills-block>                
-                <education-block blockTitle="Education"></education-block>
-                <trainings-block blockTitle="Trainings"></trainings-block>
-                <languages-block blockTitle="Languages"></languages-block>
-                <employment-block blockTitle="Employment"></employment-block>
-                <hobbies-block blockTitle="Hobbies"></hobbies-block>
+                <main-title-block></main-title-block>
+                <experience-block></experience-block>
             </div>
         </main>
     </body>
