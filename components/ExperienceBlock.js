@@ -15,10 +15,10 @@ export default class ExperienceBlock extends HTMLElement {
                 <div class="content">to Present - Minsk, Belarus</div>
                 <div class="content p-b-2 p-t-2">
                     <ul class="experience-detailed-info">
-                        <li>designed and developed a web-based system of comprehensive automation of the process of
-                        maintaining journals of dispatch orders at the workplaces of given control areas</li>
+                        <li>led the development process and took part in development of a web-based system of comprehensive automation
+                        of the process of maintaining journals of dispatch orders at the workplaces of given control areas</li>
                         <li>lead the process of designing and developing the new core of the completed train schedule maintenance system</li>
-                        <li>ensure effective interaction between the different departments involved in the development</li>
+                        <li>ensure effective interaction between different departments involved in the development</li>
                     </ul>
                 </div>
                 <li>
@@ -28,7 +28,7 @@ export default class ExperienceBlock extends HTMLElement {
                 <div class="content p-b-2 p-t-2">
                     <ul class="experience-detailed-info">
                         <li class="p-b-2">designed the central database of completed train schedule</li>
-                        <li class="p-b-2">developed applications that collect information from isolated completed train schedule
+                        <li class="p-b-2">designed and developed applications that collect information from isolated completed train schedule
                         systems and form a single (for all railway) completed train schedule</li>
                         <li class="p-b-2">designed and developed a system that receives and processes information from the
                         acoustic sounding system</li>
@@ -44,8 +44,9 @@ export default class ExperienceBlock extends HTMLElement {
                     <ul class="experience-detailed-info">
                         <li class="p-b-2">designed and developed applications that allow to create and maintain a unified database of
                         Belarusian railway objects under construction</li>
-                        <li>designed and developed an application where train dispatchers can create orders and warnings -
-                        an integral part of our completed train schedule maintenance system</li>
+                        <li>designed and developed an integral part of our completed train schedule maintenance system - 
+                        an application for recording and monitoring dispatcher orders and warnings related to the management of work processes
+                        </li>
                     </ul>
                 </div>
 
