@@ -6,16 +6,15 @@
   --font-family: "Segoe UI", -apple-system, Arial, Verdana, sans-serif;
   --header-color: #617f9d;
   --second-header-color: black;
-  --big-header-font-size: 3rem;
-  --big-header-letter-spacing: .1rem;
+  --big-header-font-size: 2.5rem;
   --medium-header-font-size: 1.4rem;
+  --header-letter-spacing: .1rem;
   --font-size: 1.3rem;
 }
 
 html {
   background-color: var(--html-bg-color);
   padding: 0 1rem;
-  min-width: 50rem;
   font-family: var(--font-family);
   display: flex;
   justify-content: center;
@@ -25,8 +24,9 @@ html {
 
 body {
   background-color: var(--body-bg-color);
-  min-width: 40rem;
+  min-width: 300px;
   max-width: 60rem;
+  margin: 0;
   overflow: scroll;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
@@ -92,11 +92,12 @@ h1, h3 {
   color: var(--header-color);
   margin: 0 0 1rem 0;
   text-transform: uppercase;
-  letter-spacing: var(--big-header-letter-spacing);
+  letter-spacing: var(--header-letter-spacing);
 }
 
 h1 {
   font-size: var(--big-header-font-size);
+  text-align: center;
 }
 
 h3 {
@@ -106,6 +107,7 @@ h3 {
 
 h3.specialization {
   color: var(--second-header-color);
+  text-align: center;
 }
 
 .left-block .main-title {
@@ -114,7 +116,7 @@ h3.specialization {
 
 .photo-block {
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   overflow: hidden;
   background-color: var(--body-bg-color);
 }
@@ -342,7 +344,11 @@ ul.experience-detailed-info li::before {
   }
   body {
     box-shadow: none;
+    min-width: 100%;
   }
+  h3 {
+    padding-bottom: 0; 
+  }  
   .left-block .main-title {
     display: contents;
   }
@@ -363,9 +369,10 @@ ul.experience-detailed-info li::before {
     align-items: center;
   }
   .photo-block {
-    height: 20rem;
-    width: 20rem;
+    height: calc(70vw);
+    width: calc(70vw);
     border-radius: 50%;
+    margin: .5rem 0;
   }
   .project-gallery {
     grid-template-columns: 100%;
